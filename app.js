@@ -1,6 +1,6 @@
 const imgDataBtn = document.querySelector(".bottom-svg");
 const btnTest = document.querySelector(".btnTest");
-// const idElement = document.querySelector(".slip_id");
+const idElement = document.querySelector(".slip_id");
 const output = document.querySelector(".content1");
 
 btnTest.addEventListener("click", () => {
@@ -13,7 +13,7 @@ btnTest.addEventListener("click", () => {
             return response.json();
         })
         .then((data) => {
-            // idElement.textContent = JSON.stringify(data.slip.id);
+            idElement.textContent = JSON.stringify(data.slip.id);
             output.textContent = JSON.stringify(data.slip.advice);
         })
         .catch((error) => {

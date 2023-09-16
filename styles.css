@@ -5,6 +5,8 @@ body {
     height: 100vh;
     background-color: #151b29;
     color: white;
+    font-family: Manrope;
+    font-weight: bold;
 }
 
 .container {
@@ -25,24 +27,29 @@ body {
     max-width: 300px;
 }
 
-#heading {
+.slip_id {
     color: green;
 }
 
 button {
     /* background-color: rgb(10, 196, 134); */
-    background: transparent;
     border: none;
     border-radius: 100%;
-    /* padding: 10px; */
+    padding: none;
 }
 
 button:hover {
     border-color: aqua;
-    color: white;
     box-shadow: 0 0 0.1em 10px rgb(57, 161, 127);
     /* box-shadow: 0.2em 0.2em 0.2em 0.2em rgb(57, 161, 127); */
     cursor: pointer;
+}
+
+.hover-effect:hover {
+    background-color: #53ffaa;
+    box-shadow: 0 0 40px 0 #53ffaa;
+    z-index: 2;
+    border-radius: 9999px;
 }
 
 @media (max-width: 600px) {
