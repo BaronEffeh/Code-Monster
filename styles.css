@@ -14,11 +14,15 @@ body {
     border-radius: 10px;
     align-items: center;
     text-align: center;
-    max-width: 250px;
+    max-width: 350px;
 }
 
 #content {
     padding: 5px 12px;
+}
+
+.content1 {
+    max-width: 300px;
 }
 
 #heading {
@@ -27,6 +31,7 @@ body {
 
 button {
     /* background-color: rgb(10, 196, 134); */
+    background: transparent;
     border: none;
     border-radius: 100%;
     /* padding: 10px; */
@@ -35,7 +40,8 @@ button {
 button:hover {
     border-color: aqua;
     color: white;
-    box-shadow: 0.2em 0.2em 0.2em 0.2em rgb(57, 161, 127);
+    box-shadow: 0 0 0.1em 10px rgb(57, 161, 127);
+    /* box-shadow: 0.2em 0.2em 0.2em 0.2em rgb(57, 161, 127); */
     cursor: pointer;
 }
 
